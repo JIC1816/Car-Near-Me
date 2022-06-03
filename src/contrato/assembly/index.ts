@@ -61,7 +61,7 @@ export function setPropietario(nombre: string, autoDisponible: bool, precio: u32
   //Hacemos validaciones. Queremos que:
   //* No pongan 0 como edad, osea que la edad sea mayor a 0.
   //* El nombre tenga más de 3 caractéres.
-  //* Paguen 1 NEAR cada vez que se registren (acá hay un bug, necesito modificar la forma en que se ponen los valores)
+  //* Paguen 1 NEAR cada vez que se registren
   assert(nombre.length >= 3, "El nombre debe contener 3 o más caractéres.");
   assert(deposito >= ONE_NEAR, "Debes pagar 1 NEAR para registrarte.");
   assert(precioInt > ONE_NEAR, "El precio de renta debe ser mayor a 1 NEAR.");
